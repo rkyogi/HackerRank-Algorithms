@@ -1,0 +1,36 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+n=int(input())
+arr=[]
+arr=list(map(int,input().split()))
+
+
+
+
+Positive_Count = 0
+Negative_Count = 0
+zero=0
+
+for i in range(n):
+    if(arr[i]>0):
+        Positive_Count+=1
+    elif(arr[i]<0):
+        Negative_Count+=1
+    else:
+        zero+=1
+        
+p= float(Positive_Count/n)
+q= float(Negative_Count/n);
+r= float(zero/n)
+print(p)
+print(q)
+print(r)
+        
+    
+    
