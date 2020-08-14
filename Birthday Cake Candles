@@ -1,0 +1,10 @@
+n=int(input())
+lks=list(map(int,input().rstrip().split()))
+lks.sort()
+lks.reverse()
+count=0
+max=lks[0]
+for i in range(len(lks)):
+    if(lks[i]==max):
+        count+=1
+print(count)
