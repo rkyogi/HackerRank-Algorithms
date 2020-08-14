@@ -1,0 +1,7 @@
+n=int(input())
+for i in range(n):
+    k=int(input())
+    if((k%5)>=3 and k>=38):
+        print(k+5-k%5)
+    else:
+        print(k)
