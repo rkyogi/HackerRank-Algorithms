@@ -1,0 +1,10 @@
+N = int(input())
+matrix = []
+diagonal1=0
+diagonal2=0
+for i in range(N):
+    matrix.append(list(map(int, input().rstrip().split())))
+for i in range(N):
+    diagonal1+=matrix[i][i]
+    diagonal2+=matrix[N-1-i][i]
+print(abs(diagonal1-diagonal2))
