@@ -1,0 +1,28 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+n = int(input())
+scores = list(map(int, input().rstrip().split()))
+maxs=scores[0]
+mins=scores[0]
+count1=0
+count2=0
+
+#scores.sort()
+#scores.reverse()
+
+for i in range(len(scores)):
+    if(scores[i]>maxs):
+        maxs=scores[i]
+        count1+=1
+        
+    if(scores[i]<mins):
+        mins=scores[i]
+        count2+=1
+
+print(count1,count2)
