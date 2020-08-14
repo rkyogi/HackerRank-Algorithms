@@ -1,0 +1,28 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+a=[5]
+a = list(map(int, input().rstrip().split()))
+
+istsum=0
+lstsum=0
+for i in range(5-1):
+    for j in range(5-i-1):
+        if a[j]>a[j+1]:
+            t=a[j]
+            a[j]=a[j+1]
+            a[j+1]=t
+
+
+for i in range(5-1):
+    istsum+=a[i]
+for i in range(1,5):
+    lstsum+=a[i]
+    
+print(istsum,lstsum)
